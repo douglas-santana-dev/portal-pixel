@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #EFB810;
+}
+
+/* LOGO */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left img {
+    height: 40px;
+}
+
+.header-left h1 {
+    font-size: 20px;
+    color: #EFB810;
+}
+
+/* MENU */
+.header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0f4c81;
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BUSCA */
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  outline: none;
+  width: 180px;
+  transition: 0.2s;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-input:focus {
+  border-color: #0f0f0f;
+  width: 220px;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ÍCONE */
+.search-icon {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.search-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: #888;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* INPUT */
+.search-input {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 12px 8px 35px; /* 👈 espaço pra lupa */
+  border-radius: 8px;
+  outline: none;
+  width: 180px;
+  transition: 0.2s;
+}
+
+.search-input:focus {
+  border-color: #EFB810;
+  width: 220px;
+}
+
+/* AJUSTES DE RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    /* LOGO + TÍTULO CENTRAL */
+    .header-left {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-left h1 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    /* MENU */
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* LUPA */
+    .header-right {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+}

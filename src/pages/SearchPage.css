@@ -1,0 +1,29 @@
+.search-page {
+  padding: 40px 200px;
+  background: #0f0f0f;
+  color: white;
+  min-height: 100vh;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-item {
+  display: flex;
+  gap: 20px;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.search-item img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}

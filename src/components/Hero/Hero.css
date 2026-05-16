@@ -1,0 +1,92 @@
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    min-height: 500px; /* 👈 ao invés de height */
+}
+
+/* PRINCIPAL */
+.hero-main {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    aspect-ratio: 13 / 8;
+}
+
+.hero-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* overlay */
+.hero-main-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 20px;
+    border-radius: 12px;
+
+    color: white;
+}
+
+/* efeito hover */
+.hero-main:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+/* LATERAL */
+.hero-side {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* CARD */
+.hero-card {
+    display: flex;
+    gap: 12px;
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+}
+
+.hero-card:hover {
+    transform: translateY(-3px);
+    background: #574203;
+}
+
+.hero-card img {
+    width: 90px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr; /* empilha */
+    padding: 20px;
+  }
+  .hero-side {
+    grid-template-rows: none;
+    grid-template-columns: 1fr;
+  }
+}

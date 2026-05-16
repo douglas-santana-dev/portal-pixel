@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f0f0f; /* fundo escuro elegante */
+    color: #e2e8f0;
+}
+
+/* HEADER */
+.header {
+    background: #1a1a1a;
+}
+
+/* MENU */
+.header-menu a {
+    color: #EFB810; /* azul mais vivo */
+}
+
+/* LOGO */
+.header-left h1 {
+    color: #EFB810;
+}
+
+/* BUSCA */
+.search-input {
+    background: #0f0f0f;
+    color: white;
+    border: 1px solid #0f0f0f;
+}
+
+html, body {
+    overflow-x: hidden; /* 👈 evita corte lateral */
+}
+* {
+    box-sizing: border-box;
+}
+.back-button {
+    margin: 20px 40px;
+    background: none;
+    border: none;
+    color: #EFB810;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+/* 🔥 CARD PADRÃO DO PORTAL */
+.card-hover {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+/* REMOVE LINK ROXO */
+.card-hover:visited {
+  color: inherit;
+}
+
+/* HOVER GLOBAL */
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: #EFB810;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* TEXTO PADRÃO */
+.card-hover h2,
+.card-hover h3 {
+  color: #f9fafb;
+  transition: 0.2s;
+}
+
+.card-hover p {
+  color: #9ca3af;
+}
+
+/* HOVER TEXTO */
+.card-hover:hover h2,
+.card-hover:hover h3 {
+  color: #EFB810;
+}
