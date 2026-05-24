@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portal-pixel/static/css/main.699a485e.css",
-    "main.js": "/portal-pixel/static/js/main.25f534f6.js",
+    "main.js": "/portal-pixel/static/js/main.ea0929c1.js",
     "static/js/453.1bf2aad8.chunk.js": "/portal-pixel/static/js/453.1bf2aad8.chunk.js",
     "static/media/logo-portal-pixel.png": "/portal-pixel/static/media/logo-portal-pixel.332b4c0df6aeb8da77b4.png",
     "static/media/logo-portal-pixel2.png": "/portal-pixel/static/media/logo-portal-pixel2.216ddc0f91a6cb2aa8c2.png",
     "index.html": "/portal-pixel/index.html",
     "main.699a485e.css.map": "/portal-pixel/static/css/main.699a485e.css.map",
-    "main.25f534f6.js.map": "/portal-pixel/static/js/main.25f534f6.js.map",
+    "main.ea0929c1.js.map": "/portal-pixel/static/js/main.ea0929c1.js.map",
     "453.1bf2aad8.chunk.js.map": "/portal-pixel/static/js/453.1bf2aad8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.699a485e.css",
-    "static/js/main.25f534f6.js"
+    "static/js/main.ea0929c1.js"
   ]
 }
